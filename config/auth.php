@@ -57,8 +57,8 @@ return [
     | users are actually retrieved out of your database or other storage
     | mechanisms used by this application to persist your user's data.
     |
-    | If you have multiple user tables or models you may configure multiple
-    | sources which represent each models / table. These sources may then
+    | If you have multiple user tables or motocycles you may configure multiple
+    | sources which represent each motocycles / table. These sources may then
     | be assigned to any extra authentication guards you have defined.
     |
     | Supported: "database", "eloquent"
@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'models' => App\Models\User::class,
+            'motocycles' => App\Models\User::class,
         ],
 
         // 'users' => [
@@ -83,7 +83,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | You may specify multiple password reset configurations if you have more
-    | than one user table or models in the application and you want to have
+    | than one user table or motocycles in the application and you want to have
     | separate password reset settings based on the specific user types.
     |
     | The expire time is the number of minutes that the reset token should be

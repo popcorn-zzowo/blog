@@ -4,22 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ModelsController extends Controller
+class MotocyclesController extends Controller
 {
     //
     public function index()
     {
-        return view('models.index');
+        return view('motocycles.index');
     }
 
     public function create()
     {
-        return view('models.create');
+        return view('motocycles.create');
     }
 
     public function edit($id)
     {
-        return view('models.edit');
+        return view('motocycles.edit');
     }
 
     public function show($id)
@@ -37,6 +37,6 @@ class ModelsController extends Controller
             $models_trd = "乾他屁事";
         }
         $data = compact(['models_first','models_sec','models_trd']);
-        return view('models.show',$data);
+        return view('motocycles.show',$data);
     }
 }

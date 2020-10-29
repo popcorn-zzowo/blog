@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LabelsController;
-use App\Http\Controllers\ModelsController;
+use App\Http\Controllers\BrandsController;
+use App\Http\Controllers\MotocyclesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,24 +13,24 @@ use App\Http\Controllers\ModelsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('labels',[LabelsController::class,'index']);
+Route::get('brands',[BrandsController::class,'index']);
 
-Route::get('labels/create',[LabelsController::class,'create']);
+Route::get('brands/create',[BrandsController::class,'create']);
 
-Route::get('labels/{id}',[LabelsController::class,'show'])->where('id','[0-9]+');
+Route::get('brands/{id}',[BrandsController::class,'show'])->where('id','[0-9]+');
 
-Route::get('labels/{id}/edit',[LabelsController::class,'edit'])->where('id','[0-9]+');
-
-
+Route::get('brands/{id}/edit',[BrandsController::class,'edit'])->where('id','[0-9]+');
 
 
 
 
 
-Route::get('models',[ModelsController::class,'index']);
 
-Route::get('models/create',[ModelsController::class,'create']);
 
-Route::get('models/{id}',[ModelsController::class,'show'])->where('id','[0-9]+');
+Route::get('motocycles',[MotocyclesController::class,'index']);
 
-Route::get('models/{id}/edit',[ModelsController::class,'edit'])->where('id','[0-9]+');
+Route::get('motocycles/create',[MotocyclesController::class,'create']);
+
+Route::get('motocycles/{id}',[MotocyclesController::class,'show'])->where('id','[0-9]+');
+
+Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('id','[0-9]+');

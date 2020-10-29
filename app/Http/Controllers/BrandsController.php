@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use Illuminate\Http\Request;
 
-class LabelsController extends Controller
+class BrandsController extends Controller
 {
     //
     public function index()
     {
-        return view('labels.index');
+        return view('brands.index');
     }
 
     public function create()
     {
-        return view('labels.create');
+        return view('brands.create');
     }
 
     public function edit($id)
@@ -32,12 +33,13 @@ class LabelsController extends Controller
             $data["labels_sec"] = "乾我屁事";
             $data["labels_trd"] = "乾他屁事";
         }
-        return view('labels.edit',$data);
+        return view('brands.edit',$data);
     }
 
     public function show($id)
     {
-        if($id == 87)
+        $temp = Brand::find($id)->toArray();
+      /*  if($id == 87)
         {
             $labels_first = "你才87";
             $labels_sec = "你全家都87";
@@ -48,7 +50,7 @@ class LabelsController extends Controller
             $labels_first = "乾你屁事";
             $labels_sec = "乾我屁事";
             $labels_trd = "乾他屁事";
-        }
-        return view('labels.show')->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
+        }*/
+        return view('brands.show',$temp);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
     }
 }

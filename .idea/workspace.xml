@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/models/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/models/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/models/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/models/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LabelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_models_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055235_create_labels_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055235_create_brands_tabel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/labels/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/labels/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/labels/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/labels/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/models/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/models/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/models/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/models/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +195,7 @@
       <workItem from="1602122855722" duration="7166000" />
       <workItem from="1602725925130" duration="9982000" />
       <workItem from="1603331158693" duration="8696000" />
-      <workItem from="1603937677859" duration="1709000" />
+      <workItem from="1603937677859" duration="8257000" />
     </task>
     <servers />
   </component>
@@ -197,14 +203,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="757" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602740528545">
+    <state x="757" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603956059076">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="757" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602740528545" />
+    <state x="757" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603956059076" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600947284325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600947284325" />
+    <state x="733" y="240" key="NewPhpClassDialog" timestamp="1603956553859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603956553859" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1602123190087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

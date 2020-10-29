@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLabelsTabel extends Migration
+class CreateBrandsTabel extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateLabelsTabel extends Migration
      */
     public function up()
     {
-        Schema::create('labels', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->id()->comment('編號');
-            $table->string('team')->comment('車廠');
+            $table->string('brand')->comment('車廠');
             $table->string('country')->comment('國家');
             $table->boolean('gp')->comment('是否參加過GP');
             $table->boolean('wsbk')->comment('是否參加過WSBK');
@@ -30,6 +30,6 @@ class CreateLabelsTabel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('labels');
+        Schema::dropIfExists('brands');
     }
 }

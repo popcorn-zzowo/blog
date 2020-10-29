@@ -22,8 +22,6 @@
 </head>
 <body class="antialiased">
 <h1>這是顯示單一廠牌的view</h1>
-{{$one}}</br>
-{{$two}}</br>
-{{$three}}</br>
+{{$brand}}
 </body>
 </html>
