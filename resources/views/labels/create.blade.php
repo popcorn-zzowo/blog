@@ -21,6 +21,6 @@
     </style>
 </head>
 <body class="antialiased">
-
+<h1>這是新增廠牌的view</h1>
 </body>
 </html>

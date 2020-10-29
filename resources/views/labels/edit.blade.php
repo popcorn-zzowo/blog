@@ -21,6 +21,10 @@
     </style>
 </head>
 <body class="antialiased">
+<h1>這是修改廠牌的view</h1>
+{{$labels_first}}<br>
+{{$labels_sec}}<br>
+{{$labels_trd}}<br>
 
 </body>
 </html>
