@@ -21,6 +21,29 @@
     </style>
 </head>
 <body class="antialiased">
-<h1>這是顯示廠牌的view</h1>
+<h1>這是顯示所有車廠的view</h1>
+
+<table>
+    <tr>
+    <th>編號</th>
+    <th>車廠</th>
+    <th>國家</th>
+    <th>有無參加GP</th>
+    <th>有無參加WSBK</th>
+    <th>建立時間</th>
+    <th>編輯時間</th>
+    </tr>
+    @foreach($brands as $brand)
+        <tr>
+            <td>{{$brand->id}}</td>
+            <td>{{$brand->brand}}</td>
+            <td>{{$brand->country}}</td>
+            <td>{{$brand->gp}}</td>
+            <td>{{$brand->wsbk}}</td>
+            <td>{{$brand->created_at}}</td>
+            <td>{{$brand->updated_at}}</td>
+        </tr>
+    @endforeach
+</table>
 </body>
 </html>

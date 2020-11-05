@@ -22,8 +22,6 @@
 </head>
 <body class="antialiased">
 <h1>這是顯示單一車型的view</h1>
-{{$models_first}}
-{{$models_sec}}
-{{$models_trd}}
+
 </body>
 </html>

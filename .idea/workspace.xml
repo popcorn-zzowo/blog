@@ -3,22 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LabelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_models_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055235_create_labels_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055235_create_brands_tabel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/labels/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/labels/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/labels/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/labels/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/models/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/models/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/models/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/models/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/brands/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +188,8 @@
       <workItem from="1602122855722" duration="7166000" />
       <workItem from="1602725925130" duration="9982000" />
       <workItem from="1603331158693" duration="8696000" />
-      <workItem from="1603937677859" duration="8257000" />
+      <workItem from="1603937677859" duration="8540000" />
+      <workItem from="1604539652044" duration="15649000" />
     </task>
     <servers />
   </component>
@@ -207,6 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="757" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603956059076" />
+    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604554155438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604554155438" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600947284325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

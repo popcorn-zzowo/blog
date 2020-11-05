@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Brand extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'brand',
+        'country',
+        'gp',
+        'wsbk',
+        'created_at',
+        'updated_at'
+    ];
+//protected $primaryKey = "[
 }

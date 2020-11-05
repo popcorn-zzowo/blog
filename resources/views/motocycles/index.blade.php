@@ -21,6 +21,32 @@
     </style>
 </head>
 <body class="antialiased">
-<h1>這是顯示車型的view</h1>
+<h1>這是顯示所有機車的view</h1>
+<table>
+    <tr>
+        <th>編號</th>
+        <th>車廠</th>
+        <th>車型</th>
+        <th>車種</th>
+        <th>馬力</th>
+        <th>扭力</th>
+        <th>重量</th>
+        <th>建立時間</th>
+        <th>編輯時間</th>
+    </tr>
+    @foreach($motocycles as $motocycle)
+        <tr>
+            <td>{{$motocycle->id}}</td>
+            <td>{{$motocycle->brand_id}}</td>
+            <td>{{$motocycle->name}}</td>
+            <td>{{$motocycle->king}}</td>
+            <td>{{$motocycle->hp}}</td>
+            <td>{{$motocycle->nm}}</td>
+            <td>{{$motocycle->kg}}</td>
+            <td>{{$motocycle->created_at}}</td>
+            <td>{{$motocycle->updated_at}}</td>
+        </tr>
+        @endforeach()
+</table>
 </body>
 </html>
