@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +154,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -189,7 +183,9 @@
       <workItem from="1602725925130" duration="9982000" />
       <workItem from="1603331158693" duration="8696000" />
       <workItem from="1603937677859" duration="8540000" />
-      <workItem from="1604539652044" duration="15649000" />
+      <workItem from="1604539652044" duration="17266000" />
+      <workItem from="1604566358847" duration="1158000" />
+      <workItem from="1604567696146" duration="510000" />
     </task>
     <servers />
   </component>
@@ -213,10 +209,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603956553859" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1602123190087">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604567520392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602123190087" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604567520392" />
     <state x="663" y="74" width="593" height="891" key="find.popup" timestamp="1602140784123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

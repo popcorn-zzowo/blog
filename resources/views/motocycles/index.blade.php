@@ -39,7 +39,7 @@
             <td>{{$motocycle->id}}</td>
             <td>{{$motocycle->brand_id}}</td>
             <td>{{$motocycle->name}}</td>
-            <td>{{$motocycle->king}}</td>
+            <td>{{$motocycle->kind}}</td>
             <td>{{$motocycle->hp}}</td>
             <td>{{$motocycle->nm}}</td>
             <td>{{$motocycle->kg}}</td>

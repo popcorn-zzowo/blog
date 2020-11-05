@@ -38,8 +38,18 @@
             <td>{{$brand->id}}</td>
             <td>{{$brand->brand}}</td>
             <td>{{$brand->country}}</td>
-            <td>{{$brand->gp}}</td>
-            <td>{{$brand->wsbk}}</td>
+
+
+            @if($brand->gp == true)
+                <td>有</td>
+            @else
+                <td>無</td>
+            @endif
+            @if($brand->wsbk == true)
+                <td>有</td>
+            @else
+                <td>無</td>
+            @endif
             <td>{{$brand->created_at}}</td>
             <td>{{$brand->updated_at}}</td>
         </tr>

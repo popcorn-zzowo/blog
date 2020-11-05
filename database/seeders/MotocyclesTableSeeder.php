@@ -31,8 +31,8 @@ class MotocyclesTableSeeder extends Seeder
         $First_Name = ucfirst($First_Name);
 
         $last_name = '0123456789';
-        $last_name .= $last_name[rand(0, 3)];
-        $name = $First_Name . $last_name;
+        $last_name = $last_name[rand(0, 9)];
+        $name = $First_Name.$last_name;
         return $name;
     }
     public function generateRandomZone(){
