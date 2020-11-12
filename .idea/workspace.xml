@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Motocycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Motocycle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/brands/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +189,7 @@
       <workItem from="1604539652044" duration="17266000" />
       <workItem from="1604566358847" duration="1158000" />
       <workItem from="1604567696146" duration="510000" />
+      <workItem from="1605144120820" duration="2721000" />
     </task>
     <servers />
   </component>

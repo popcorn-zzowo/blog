@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Motocycle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class MotocyclesController extends Controller
 {
@@ -16,8 +17,8 @@ class MotocyclesController extends Controller
 
     public function create()
     {
-        $Motocycle = Motocycle::create(['brand_id'=>'honda','name'=>'CBR1000','kind'=>'跑車','hp'=>'218','nm'=>'112','kg'=>'201','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
-        return view('motocycles.create');
+        $Motocycle = Motocycle::create(['brand_id'=>'5','name'=>'CBR1000','kind'=>'跑車','hp'=>'218','nm'=>'112','kg'=>'201','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
+        return view('motocycles.create',$Motocycle->toArray());
     }
 
     public function edit($id)
@@ -26,7 +27,7 @@ class MotocyclesController extends Controller
         $Motocycle->update(['kg'=>'180']);
         $Motocycle->save();
         $Motocycle->toArray();
-        return view('motocycles.edit');
+        return view('motocycles.edit',$Motocycle);
     }
 
     public function show($id)
@@ -45,6 +46,6 @@ class MotocyclesController extends Controller
             $models_trd = "乾他屁事";
         }
         $data = compact(['models_first','models_sec','models_trd']);*/
-        return view('motocycles.show');
+        return view('motocycles.show',$Motocycle);
     }
 }

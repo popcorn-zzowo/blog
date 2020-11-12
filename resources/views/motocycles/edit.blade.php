@@ -22,5 +22,12 @@
 </head>
 <body class="antialiased">
 <h1>這是修改車型的view</h1>
+編號:{{$id}}</br>
+車型:{{$name}}</br>
+車廠:{{$brand_id}}</br>
+車種:{{$kind}}</br>
+馬力:{{$hp}}</br>
+扭力:{{$nm}}</br>
+重量:{{$kg}}</br>
 </body>
 </html>

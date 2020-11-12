@@ -22,5 +22,10 @@
 </head>
 <body class="antialiased">
 <h1>這是新增廠牌的view</h1>
+編號:{{$id}}</br>
+車廠:{{$brand}}</br>
+國家:{{$country}}</br>
+有無參加過GP:{{$gp}}</br>
+有無參加WSBK:{{$wsbk}}</br>
 </body>
 </html>

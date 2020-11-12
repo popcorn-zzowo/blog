@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Motocycle extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'brand_id',
+        'name',
+        'kind',
+        'hp',
+        'nm',
+        'kg',
+        'created_at',
+        'updated_at'
+    ];
 }
