@@ -29,6 +29,6 @@
 馬力:{{$hp}}</br>
 扭力:{{$nm}}</br>
 重量:{{$kg}}</br>
-<a href="<?php echo route('motocycles.index'); ?>" class="m1-1 underline">回到車種的view</a>
+<a href="{{ route('motocycles.index')}}" class="m1-1 underline">回到車種的view</a>
 </body>
 </html>

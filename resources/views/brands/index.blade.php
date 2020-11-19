@@ -22,9 +22,9 @@
 </head>
 <body class="antialiased">
 <h1>這是顯示所有車廠的view</h1>
-<a href="<?php echo route('motocycles.index'); ?>" class="m1-1 underline">回到車種的view</a>
+<a href="{{ route('motocycles.index')}}" class="m1-1 underline">回到車種的view</a>
 <br>
-<a href="<?php echo route('brands.create'); ?>" class="m1-1 underline">新增車廠資料</a>
+<a href="{{ route('brands.create')}}" class="m1-1 underline">新增車廠資料</a>
 <table>
     <tr>
     <th>編號</th>
@@ -56,8 +56,8 @@
             @endif
             <td>{{$brand->created_at}}</td>
             <td>{{$brand->updated_at}}</td>
-            <td><a href="<?php echo route('brands.show',['id'=>$brand->id]);?>">顯示</a></td>
-            <td><a href="<?php echo route('brands.show',['id'=>$brand->id]);?>">修改</a></td>
+            <td><a href="{{ route('brands.show',['id'=>$brand->id])}}">顯示</a></td>
+            <td><a href="{{ route('brands.edit',['id'=>$brand->id])}}">修改</a></td>
         </tr>
     @endforeach
 </table>
