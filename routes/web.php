@@ -13,24 +13,24 @@ use App\Http\Controllers\MotocyclesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('brands',[BrandsController::class,'index']);
+Route::get('brands',[BrandsController::class,'index'])->name('brands.index');
 
-Route::get('brands/create',[BrandsController::class,'create']);
+Route::get('brands/create',[BrandsController::class,'create'])->name('brands.create');
 
-Route::get('brands/{id}',[BrandsController::class,'show'])->where('id','[0-9]+');
+Route::get('brands/{id}',[BrandsController::class,'show'])->where('id','[0-9]+')->name('brands.show');
 
-Route::get('brands/{id}/edit',[BrandsController::class,'edit'])->where('id','[0-9]+');
-
-
+Route::get('brands/{id}/edit',[BrandsController::class,'edit'])->where('id','[0-9]+')->name('brands.edit');
 
 
 
 
 
-Route::get('motocycles',[MotocyclesController::class,'index']);
 
-Route::get('motocycles/create',[MotocyclesController::class,'create']);
 
-Route::get('motocycles/{id}',[MotocyclesController::class,'show'])->where('id','[0-9]+');
+Route::get('motocycles',[MotocyclesController::class,'index'])->name('motocycles.index');
 
-Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('id','[0-9]+');
+Route::get('motocycles/create',[MotocyclesController::class,'create'])->name('motocycles.create');
+
+Route::get('motocycles/{id}',[MotocyclesController::class,'show'])->where('id','[0-9]+')->name('motocycles.show');
+
+Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('id','[0-9]+')->name('motocycles.edit');

@@ -27,5 +27,6 @@
 國家:{{$country}}</br>
 有無參加過GP:{{$gp}}</br>
 有無參加WSBK:{{$wsbk}}</br>
+<a href="<?php echo route('brands.index'); ?>" class="m1-1 underline">回到車廠的view</a>
 </body>
 </html>

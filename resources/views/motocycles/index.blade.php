@@ -22,6 +22,9 @@
 </head>
 <body class="antialiased">
 <h1>這是顯示所有機車的view</h1>
+<a href="<?php echo route('brands.index'); ?>" class="m1-1 underline">回到車廠的view</a>
+<br>
+<a href="<?php echo route('motocycles.create'); ?>" class="m1-1 underline">新增車種資料</a>
 <table>
     <tr>
         <th>編號</th>
@@ -33,6 +36,8 @@
         <th>重量</th>
         <th>建立時間</th>
         <th>編輯時間</th>
+        <th>操作一</th>
+        <th>操作二</th>
     </tr>
     @foreach($motocycles as $motocycle)
         <tr>
@@ -45,8 +50,12 @@
             <td>{{$motocycle->kg}}</td>
             <td>{{$motocycle->created_at}}</td>
             <td>{{$motocycle->updated_at}}</td>
+            <td><a href="<?php echo route('motocycles.show',['id'=>$motocycle->id]);?>">顯示</a></td>
+            <td><a href="<?php echo route('motocycles.edit',['id'=>$motocycle->id]);?>">修改</a></td>
         </tr>
         @endforeach()
 </table>
+<a href="<?php echo route('brands.index'); ?>" class="m1-1 underline">回到車廠的view</a>
+<a href="<?php echo route('motocycles.create'); ?>" class="m1-1 underline">新增車種資料</a>
 </body>
 </html>
