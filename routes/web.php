@@ -21,7 +21,7 @@ Route::get('brands/{id}',[BrandsController::class,'show'])->where('id','[0-9]+')
 
 Route::get('brands/{id}/edit',[BrandsController::class,'edit'])->where('id','[0-9]+')->name('brands.edit');
 
-
+Route::post('brands/store',[BrandsController::class,'store'])->name('brands.store');
 
 
 
@@ -34,3 +34,5 @@ Route::get('motocycles/create',[MotocyclesController::class,'create'])->name('mo
 Route::get('motocycles/{id}',[MotocyclesController::class,'show'])->where('id','[0-9]+')->name('motocycles.show');
 
 Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('id','[0-9]+')->name('motocycles.edit');
+
+Route::post('motocycles/store',[MotocyclesController::class,'store'])->name('motocycles.store');

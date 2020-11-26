@@ -17,8 +17,8 @@ class BrandsController extends Controller
 
     public function create()
     {
-        $Brand = Brand::create(['brand'=>'honda','country'=>'japan','gp'=>true,'wsbk'=>true,'created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
-        return view('brands.create',$Brand->toArray());
+        //$Brand = Brand::create(['brand'=>'honda','country'=>'japan','gp'=>true,'wsbk'=>true,'created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
+        return view('brands.create'/*,$Brand->toArray()*/);
     }
 
     public function edit($id)
@@ -47,5 +47,9 @@ class BrandsController extends Controller
             $labels_trd = "乾他屁事";
         }*/
         return view('brands.show',$Brand);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
+    }
+    public function store()
+    {
+
     }
 }

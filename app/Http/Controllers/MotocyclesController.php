@@ -17,8 +17,8 @@ class MotocyclesController extends Controller
 
     public function create()
     {
-        $Motocycle = Motocycle::create(['brand_id'=>'5','name'=>'CBR1000','kind'=>'跑車','hp'=>'218','nm'=>'112','kg'=>'201','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
-        return view('motocycles.create',$Motocycle->toArray());
+        //$Motocycle = Motocycle::create(['brand_id'=>'5','name'=>'CBR1000','kind'=>'跑車','hp'=>'218','nm'=>'112','kg'=>'201','created_at'=>Carbon::now(),'updated_at'=>Carbon::now()]);
+        return view('motocycles.create'/*,$Motocycle->toArray()*/);
     }
 
     public function edit($id)
@@ -47,5 +47,9 @@ class MotocyclesController extends Controller
         }
         $data = compact(['models_first','models_sec','models_trd']);*/
         return view('motocycles.show',$Motocycle);
+    }
+    public function store()
+    {
+
     }
 }
