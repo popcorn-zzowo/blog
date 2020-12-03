@@ -23,6 +23,10 @@ Route::get('brands/{id}/edit',[BrandsController::class,'edit'])->where('id','[0-
 
 Route::post('brands/store',[BrandsController::class,'store'])->name('brands.store');
 
+Route::patch('brands/update/{id}' ,[BrandsController::class,'update'])->name('brands.update');
+
+Route::delete('brands/delete/{id}' ,[BrandsController::class, 'destroy'])->where('id','[0-9]+')->name('brands.destroy');
+
 
 
 
@@ -36,3 +40,5 @@ Route::get('motocycles/{id}',[MotocyclesController::class,'show'])->where('id','
 Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('id','[0-9]+')->name('motocycles.edit');
 
 Route::post('motocycles/store',[MotocyclesController::class,'store'])->name('motocycles.store');
+
+Route::patch('motocycles/update/{id}',[MotocyclesController::class,'update'])->name('motocycles.update');

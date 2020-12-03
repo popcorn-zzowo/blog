@@ -7,9 +7,9 @@
 車種:{{$kind}}</br>
 馬力:{{$hp}}</br>
 扭力:{{$nm}}</br>
-重量:{{$kg}}</br>--}}0
+重量:{{$kg}}</br>--}}
 
-{!! ! Form::open(['url'=>'motocycles/store']) !!}
+{!! Form::open(['url'=>'motocycles/store']) !!}
 <div class="form-group">
     {!! Form::label('name','車型名稱') !!}
     {!! Form::text('name',null,['class'=>'form-control']) !!}

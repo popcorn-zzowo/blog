@@ -6,7 +6,7 @@
 國家:{{$country}}</br>
 有無參加過GP:{{$gp}}</br>
 有無參加WSBK:{{$wsbk}}</br>--}}
-{!! ! Form::open(['url'=>'brands/store']) !!}
+{!! Form::open(['url'=>'brands/store']) !!}
 <div class="form-group">
     {!! Form::label('brand','車廠名稱') !!}
     {!! Form::text('brand',null,['class'=>'form-control']) !!}

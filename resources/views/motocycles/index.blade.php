@@ -11,22 +11,23 @@
         <th>馬力</th>
         <th>扭力</th>
         <th>重量</th>
-        <th>建立時間</th>
-        <th>編輯時間</th>
+{{--        <th>建立時間</th>--}}
+{{--        <th>編輯時間</th>--}}
         <th>操作一</th>
         <th>操作二</th>
     </tr>
     @foreach($motocycles as $motocycle)
         <tr>
             <td>{{$motocycle->id}}</td>
-            <td>{{$motocycle->brand_id}}</td>
-            <td>{{$motocycle->name}}</td>
+{{--            <td>{{$motocycle->brand_id}}</td>--}}
+            <td>{{$motocycle->brand}}</td>
+            <td>{{$motocycle->mname}}</td>
             <td>{{$motocycle->kind}}</td>
             <td>{{$motocycle->hp}}</td>
             <td>{{$motocycle->nm}}</td>
             <td>{{$motocycle->kg}}</td>
-            <td>{{$motocycle->created_at}}</td>
-            <td>{{$motocycle->updated_at}}</td>
+{{--            <td>{{$motocycle->created_at}}</td>--}}
+{{--            <td>{{$motocycle->updated_at}}</td>--}}
             <td><a href="{{ route('motocycles.show',['id'=>$motocycle->id])}}">顯示</a></td>
             <td><a href="{{ route('motocycles.edit',['id'=>$motocycle->id])}}">修改</a></td>
         </tr>

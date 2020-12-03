@@ -5,13 +5,28 @@ namespace App\Http\Controllers;
 use App\Models\Motocycle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class MotocyclesController extends Controller
 {
     //
     public function index()
     {
-        $motocycles = Motocycle::all();
+       // $motocycles = Motocycle::all();
+        //return view('motocycles.index',['motocycles'=>$motocycles]);
+        $motocycles = DB::table('motocycles')
+            ->join('brands','motocycles.brand_id','brands.id')
+            ->orderBy('motocycles.id')
+            ->select(
+                'motocycles.id',
+                'brands.brand',
+                'motocycles.name as mname',
+                'motocycles.kind',
+                'motocycles.hp',
+                'motocycles.nm',
+                'motocycles.kg',
+
+            )->get();
         return view('motocycles.index',['motocycles'=>$motocycles]);
     }
 
@@ -48,8 +63,39 @@ class MotocyclesController extends Controller
         $data = compact(['models_first','models_sec','models_trd']);*/
         return view('motocycles.show',$Motocycle);
     }
-    public function store()
+    public function store(Request $request)
     {
+        $name =$request->input('name');
+        $brand_id =$request->input('brand_id');
+        $kind =$request->input('kind');
+        $hp =$request->input('hp');
+        $nm =$request->input('nm');
+        $kg =$request->input('kg');
 
+        motocycle::create([
+            'name'=>$name,
+            'brand_id'=>$brand_id,
+            'kind'=>$kind,
+            'hp'=>$hp,
+            'nm'=>$nm,
+            'kg'=>$kg,
+            'created'=>Carbon::now()
+        ]);
+        return redirect('motocycles');
     }
+    public function update($id , Request $request)
+    {
+        $motocycle =Motocycle::findOrFail($id);
+
+        $motocycle->name = $request->input('name');
+        $motocycle->brand_id = $request->input('brand_id');
+        $motocycle->kind = $request->input('kind');
+        $motocycle->hp = $request->input('hp');
+        $motocycle->nm = $request->input('nm');
+        $motocycle->kg = $request->input('kg');
+        $motocycle->save();
+
+        return redirect('motocycles');
+    }
+
 }

@@ -48,8 +48,38 @@ class BrandsController extends Controller
         }*/
         return view('brands.show',$Brand);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
     }
-    public function store()
+    public function store(Request $request)
     {
+        $brand =$request->input('brand');
+        $country =$request->input('country');
+        $gp =$request->input('gp');
+        $wsbk =$request->input('wsbk');
 
+        brand::create([
+            'brand'=>$brand,
+            'country'=>$country,
+            'gp'=>$gp,
+            'wsbk'=>$wsbk,
+            'created'=>Carbon::now()
+        ]);
+        return redirect('brands');
+    }
+    public function update($id,Request $request)
+    {
+        $brand =Brand::findOrFail($id);
+
+        $brand->brand = $request->input('brand');
+        $brand->country = $request->input('country');
+        $brand->gp = $request->input('gp');
+        $brand->wsbk = $request->input('wsbk');
+        $brand->save();
+
+        return redirect('brands');
+    }
+    public function destroy($id)
+    {
+        $brand = Brand::findOrFail($id);
+        $brand->delete();
+        return redirect('brands');
     }
 }
