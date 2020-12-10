@@ -28,7 +28,14 @@ class MotocyclesController extends Controller
                 'motocycles.kg',
 
             )->get();
-        return view('motocycles.index',['motocycles'=>$motocycles]);
+
+        $kinds = Motocycle::allkinds()->get();
+        $data=[];
+        foreach ($kinds as $kind)
+        {
+            $data["$kind->kind"]=$kind->kind;
+        }
+        return view('motocycles.index',['motocycles'=>$motocycles,'kinds'=>$data]);
     }
 
     public function create()
@@ -106,19 +113,25 @@ class MotocyclesController extends Controller
     }
     public function hypercar()
     {
-        $motocycle = Motocycle::JOIN('brands', 'brands.id', 'motocycles.brand_id')
-            ->WHERE('kind','like','跑車')
-            ->ORDERBY('id')
-            ->select(
-                'motocycles.id',
-                'brands.brand',
-                'brands.country',
-                'motocycles.name as mname',
-                'motocycles.kind',
-                'motocycles.hp',
-                'motocycles.nm',
-                'motocycles.kg')
-            ->get();
-        return view('motocycles.hypercar',['motocycles'=>$motocycle]);
+        $motocycles = Motocycle::hypercar('跑車')->get();
+        $kinds = Motocycle::allhypercar()->get();
+        $data=[];
+        foreach ($kinds as $kind)
+        {
+            $data["$kind->kind"]=$kind->kind;
+        }
+        return view('motocycles.index',['motocycles'=>$motocycles,'kinds'=>$data]);
+    }
+
+    public function kind(Request $request)
+    {
+        $motocycles = Motocycle::kind($request->input('ki'))->get();
+        $kinds = Motocycle::allkinds()->get();
+        $data=[];
+        foreach ($kinds as $kind)
+        {
+            $data["$kind->kind"]=$kind->kind;
+        }
+        return view('motocycles.index',['motocycles'=>$motocycles,'kinds'=>$data]);
     }
 }

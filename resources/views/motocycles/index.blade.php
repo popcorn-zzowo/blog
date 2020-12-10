@@ -43,5 +43,11 @@
         @endforeach()
     <a href="{{ route('motocycles.create')}}" class="m1-1 underline">新增車種資料</a>
     <a href="{{ route('motocycles.hypercar')}}" class="m1-1 underline">查詢所有跑車</a>
+    <form action="{{ url('/motocycles/kind') }}" method="post">
+        {!! Form::label('ki','選取車種:') !!}
+        {!! Form::select('ki',$kinds,['class'=>'form-control']) !!}
+        <input class="btn btn-default" type="submit" value="查詢"/>
+        @csrf
+    </form>
 </table>
 @endsection

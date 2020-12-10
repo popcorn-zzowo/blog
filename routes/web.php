@@ -46,3 +46,5 @@ Route::patch('motocycles/update/{id}',[MotocyclesController::class,'update'])->n
 Route::delete('motocycles/delete/{id}',[MotocyclesController::class,'destroy'])->where('id','[0-9]+')->name('motocycles.destroy');
 
 Route::get('motocycles/hypercar',[MotocyclesController::class,'hypercar'])->name('motocycles.hypercar');
+
+Route::post('motocycles/kind',[MotocyclesController::class,'kind'])->name('motocycles.kind');
