@@ -20,6 +20,7 @@ class MotocyclesController extends Controller
             ->select(
                 'motocycles.id',
                 'brands.brand',
+                'brands.country',
                 'motocycles.name as mname',
                 'motocycles.kind',
                 'motocycles.hp',
@@ -39,10 +40,10 @@ class MotocyclesController extends Controller
     public function edit($id)
     {
         $Motocycle = Motocycle::findOrFail($id);
-        $Motocycle->update(['kg'=>'180']);
-        $Motocycle->save();
+//        $Motocycle->update(['kg'=>'180']);
+//        $Motocycle->save();
         $Motocycle->toArray();
-        return view('motocycles.edit',$Motocycle);
+        return view('motocycles.edit',['motocycle'=>$Motocycle]);
     }
 
     public function show($id)
@@ -97,5 +98,27 @@ class MotocyclesController extends Controller
 
         return redirect('motocycles');
     }
-
+    public function destroy($id)
+    {
+        $motocycle = Motocycle::findOrFail($id);
+        $motocycle->delete();
+        return redirect('motocycles');
+    }
+    public function hypercar()
+    {
+        $motocycle = Motocycle::JOIN('brands', 'brands.id', 'motocycles.brand_id')
+            ->WHERE('kind','like','跑車')
+            ->ORDERBY('id')
+            ->select(
+                'motocycles.id',
+                'brands.brand',
+                'brands.country',
+                'motocycles.name as mname',
+                'motocycles.kind',
+                'motocycles.hp',
+                'motocycles.nm',
+                'motocycles.kg')
+            ->get();
+        return view('motocycles.hypercar',['motocycles'=>$motocycle]);
+    }
 }

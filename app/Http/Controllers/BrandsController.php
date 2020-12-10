@@ -24,10 +24,10 @@ class BrandsController extends Controller
     public function edit($id)
     {
         $Brand = Brand::findOrFail($id);
-        $Brand->update(['country'=>'japan']);
-        $Brand->save();
+//        $Brand->update(['country'=>'japan']);
+//        $Brand->save();
         $Brand->toArray();
-        return view('brands.edit',$Brand);
+        return view('brands.edit', ['brand' => $Brand]);
     }
 
     public function show($id)

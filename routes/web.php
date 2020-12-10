@@ -42,3 +42,7 @@ Route::get('motocycles/{id}/edit',[MotocyclesController::class,'edit'])->where('
 Route::post('motocycles/store',[MotocyclesController::class,'store'])->name('motocycles.store');
 
 Route::patch('motocycles/update/{id}',[MotocyclesController::class,'update'])->name('motocycles.update');
+
+Route::delete('motocycles/delete/{id}',[MotocyclesController::class,'destroy'])->where('id','[0-9]+')->name('motocycles.destroy');
+
+Route::get('motocycles/hypercar',[MotocyclesController::class,'hypercar'])->name('motocycles.hypercar');
