@@ -1,6 +1,7 @@
 @extends('app')
 @section('title','新增車種資料')
 @section('moto_contents')
+    @include('message.list')
 {{--編號:{{$id}}</br>
 車型名稱:{{$name}}</br>
 車廠編號:{{$brand_id}}</br>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Motocycle;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
@@ -71,7 +71,7 @@ class MotocyclesController extends Controller
         $data = compact(['models_first','models_sec','models_trd']);*/
         return view('motocycles.show',$Motocycle);
     }
-    public function store(Request $request)
+    public function store(\App\Http\Requests\CreateMotocycleRequest $request)
     {
         $name =$request->input('name');
         $brand_id =$request->input('brand_id');
@@ -91,7 +91,7 @@ class MotocyclesController extends Controller
         ]);
         return redirect('motocycles');
     }
-    public function update($id , Request $request)
+    public function update($id , \App\Http\Requests\CreateMotocycleRequest $request)
     {
         $motocycle =Motocycle::findOrFail($id);
 

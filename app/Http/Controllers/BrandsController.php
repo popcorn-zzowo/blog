@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 
 class BrandsController extends Controller
 {
@@ -48,7 +48,7 @@ class BrandsController extends Controller
         }*/
         return view('brands.show',$Brand);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
     }
-    public function store(Request $request)
+    public function store(\App\Http\Requests\CreateBrandRequest $request)
     {
         $brand =$request->input('brand');
         $country =$request->input('country');
@@ -64,7 +64,7 @@ class BrandsController extends Controller
         ]);
         return redirect('brands');
     }
-    public function update($id,Request $request)
+    public function update($id,\App\Http\Requests\CreatebrandRequest $request)
     {
         $brand =Brand::findOrFail($id);
 
