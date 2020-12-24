@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateMotocycleRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateMotocycleRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Motocycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Motocycle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +198,7 @@
       <workItem from="1607564393928" duration="14206000" />
       <workItem from="1608183259201" duration="6534000" />
       <workItem from="1608197837255" duration="546000" />
-      <workItem from="1608773807329" duration="9733000" />
+      <workItem from="1608773807329" duration="12802000" />
     </task>
     <servers />
   </component>

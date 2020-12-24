@@ -22,20 +22,22 @@ class Motocycle extends Model
     ];
     public function scopehypercar($query,$pos)
     {
-        $query->JOIN('brands', 'brands.id', 'motocycles.brand_id')
-            ->WHERE('kind','like',$pos)
-            ->ORDERBY('id')
-            ->select(
-                'motocycles.id',
-                'brands.brand',
-                'brands.country',
-                'motocycles.name as mname',
-                'motocycles.kind',
-                'motocycles.hp',
-                'motocycles.nm',
-                'motocycles.kg',
-                'motocycles.out',
-                'motocycles.maketime');
+//        $query->JOIN('brands', 'brands.id', 'motocycles.brand_id')
+//            ->WHERE('kind','like',$pos)
+//            ->ORDERBY('id')
+//            ->select(
+//                'motocycles.id',
+//                'brands.brand',
+//                'brands.country',
+//                'motocycles.name as mname',
+//                'motocycles.kind',
+//                'motocycles.hp',
+//                'motocycles.nm',
+//                'motocycles.kg',
+//                'motocycles.out',
+//                'motocycles.maketime');
+        $query->where('kind','like',$pos)
+            ->orderBy('id');
     }
     public function scopeallkinds($query)
     {
@@ -43,23 +45,29 @@ class Motocycle extends Model
     }
     public function scopekind($query,$ki)
     {
-        $query->join('brands','brands.id','=','motocycles.brand_id')
-            ->WHERE('kind','=',$ki)
-            ->orderby('id')
-            ->select(
-                'motocycles.id',
-                'brands.brand',
-                'brands.country',
-                'motocycles.name as mname',
-                'motocycles.kind',
-                'motocycles.hp',
-                'motocycles.nm',
-                'motocycles.kg',
-                'motocycles.out',
-                'motocycles.maketime');
+//        $query->join('brands','brands.id','=','motocycles.brand_id')
+//            ->WHERE('kind','=',$ki)
+//            ->orderby('id')
+//            ->select(
+//                'motocycles.id',
+//                'brands.brand',
+//                'brands.country',
+//                'motocycles.name as mname',
+//                'motocycles.kind',
+//                'motocycles.hp',
+//                'motocycles.nm',
+//                'motocycles.kg',
+//                'motocycles.out',
+//                'motocycles.maketime');
+        $query->where('kind','=',$ki)
+            ->orderBy('id');
     }
     public function scopeallhypercar($query)
     {
         $query->select('kind')->groupBy('kind');
+    }
+    public function brand()
+    {
+        return $this->belongsTo('App\Models\Brand','brand_id','id');
     }
 }

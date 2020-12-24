@@ -12,25 +12,24 @@ class MotocyclesController extends Controller
     //
     public function index()
     {
-       // $motocycles = Motocycle::all();
-        //return view('motocycles.index',['motocycles'=>$motocycles]);
-        $motocycles = DB::table('motocycles')
-            ->join('brands','motocycles.brand_id','brands.id')
-            ->orderBy('motocycles.id')
-            ->select(
-                'motocycles.id',
-                'brands.brand',
-                'brands.country',
-                'motocycles.name as mname',
-                'motocycles.kind',
-                'motocycles.hp',
-                'motocycles.nm',
-                'motocycles.kg',
-                'motocycles.out',
-                'motocycles.maketime'
 
-            )->get();
-
+//        $motocycles = DB::table('motocycles')
+//            ->join('brands','motocycles.brand_id','brands.id')
+//            ->orderBy('motocycles.id')
+//            ->select(
+//                'motocycles.id',
+//                'brands.brand',
+//                'brands.country',
+//                'motocycles.name as mname',
+//                'motocycles.kind',
+//                'motocycles.hp',
+//                'motocycles.nm',
+//                'motocycles.kg',
+//                'motocycles.out',
+//                'motocycles.maketime'
+//
+//            )->get();
+        $motocycles=Motocycle::all();
         $kinds = Motocycle::allkinds()->get();
         $data=[];
         foreach ($kinds as $kind)

@@ -5,9 +5,9 @@
 <table>
     <tr>
         <th>編號</th>
+        <th>名稱</th>
         <th>車廠</th>
         <th>國家</th>
-        <th>車型</th>
         <th>車種</th>
         <th>馬力</th>
         <th>扭力</th>
@@ -23,9 +23,9 @@
         <tr>
             <td>{{$motocycle->id}}</td>
 {{--            <td>{{$motocycle->brand_id}}</td>--}}
-            <td>{{$motocycle->brand}}</td>
-            <td>{{$motocycle->country}}</td>
-            <td>{{$motocycle->mname}}</td>
+            <td>{{$motocycle->name}}</td>
+            <td>{{$motocycle->brand->brand}}</td>
+            <td>{{$motocycle->brand->country}}</td>
             <td>{{$motocycle->kind}}</td>
             <td>{{$motocycle->hp}}</td>
             <td>{{$motocycle->nm}}</td>
