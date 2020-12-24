@@ -32,7 +32,8 @@ class BrandsController extends Controller
 
     public function show($id)
     {
-        $Brand = Brand::find($id)->toArray();
+        $Brand = Brand::findOrFail($id);
+        $motocycles=$Brand->motocycles;
         //$Brand = Brand::WHERE('country','japan')->get()->toArray();
       /*  if($id == 87)
         {
@@ -46,7 +47,7 @@ class BrandsController extends Controller
             $labels_sec = "乾我屁事";
             $labels_trd = "乾他屁事";
         }*/
-        return view('brands.show',$Brand);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
+        return view('brands.show',['brand'=>$Brand,'motocycles'=>$motocycles]);#->with(["one" => $labels_first,"two" => $labels_sec,"three" => $labels_trd]);
     }
     public function store(\App\Http\Requests\CreateBrandRequest $request)
     {

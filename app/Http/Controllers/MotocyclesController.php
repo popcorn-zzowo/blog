@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Motocycle;
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
@@ -26,6 +26,8 @@ class MotocyclesController extends Controller
                 'motocycles.hp',
                 'motocycles.nm',
                 'motocycles.kg',
+                'motocycles.out',
+                'motocycles.maketime'
 
             )->get();
 
@@ -79,7 +81,8 @@ class MotocyclesController extends Controller
         $hp =$request->input('hp');
         $nm =$request->input('nm');
         $kg =$request->input('kg');
-
+        $out=$request->input('out');
+        $maketime=$request->input('maketime');
         motocycle::create([
             'name'=>$name,
             'brand_id'=>$brand_id,
@@ -87,6 +90,8 @@ class MotocyclesController extends Controller
             'hp'=>$hp,
             'nm'=>$nm,
             'kg'=>$kg,
+            'out'=>$out,
+            'maketime'=>$maketime,
             'created'=>Carbon::now()
         ]);
         return redirect('motocycles');
@@ -101,6 +106,8 @@ class MotocyclesController extends Controller
         $motocycle->hp = $request->input('hp');
         $motocycle->nm = $request->input('nm');
         $motocycle->kg = $request->input('kg');
+        $motocycle->out = $request->input('out');
+        $motocycle->maketime = $request->input('maketime');
         $motocycle->save();
 
         return redirect('motocycles');

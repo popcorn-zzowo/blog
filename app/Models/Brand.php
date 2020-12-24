@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Brand extends Model
 {
     use HasFactory;
-    protected $fillable=[
+
+    protected $fillable = [
         'brand',
         'country',
         'gp',
@@ -16,5 +17,12 @@ class Brand extends Model
         'created_at',
         'updated_at'
     ];
+
 //protected $primaryKey = "[
+
+
+    public function motocycles()
+    {
+        return $this->hasMany('App\Models\motocycle', 'brand_id');
+    }
 }

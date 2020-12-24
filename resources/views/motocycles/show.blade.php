@@ -8,4 +8,6 @@
 馬力:{{$hp}}</br>
 扭力:{{$nm}}</br>
 重量:{{$kg}}</br>
+製造日期:{{$maketime}}</br>
+出廠日期:{{$out}}</br>
 @endsection

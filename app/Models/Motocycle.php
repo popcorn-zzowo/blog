@@ -15,6 +15,8 @@ class Motocycle extends Model
         'hp',
         'nm',
         'kg',
+        'out',
+        'maketime',
         'created_at',
         'updated_at'
     ];
@@ -31,7 +33,9 @@ class Motocycle extends Model
                 'motocycles.kind',
                 'motocycles.hp',
                 'motocycles.nm',
-                'motocycles.kg');
+                'motocycles.kg',
+                'motocycles.out',
+                'motocycles.maketime');
     }
     public function scopeallkinds($query)
     {
@@ -50,7 +54,9 @@ class Motocycle extends Model
                 'motocycles.kind',
                 'motocycles.hp',
                 'motocycles.nm',
-                'motocycles.kg');
+                'motocycles.kg',
+                'motocycles.out',
+                'motocycles.maketime');
     }
     public function scopeallhypercar($query)
     {

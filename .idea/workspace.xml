@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/message/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateMotocycleRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateMotocycleRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Motocycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Motocycle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_055126_create_motocycles_tabel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MotocyclesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/brands/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/brands/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +205,9 @@
       <workItem from="1606354928811" duration="7136000" />
       <workItem from="1606960388008" duration="8552000" />
       <workItem from="1607564393928" duration="14206000" />
-      <workItem from="1608183259201" duration="6356000" />
+      <workItem from="1608183259201" duration="6534000" />
+      <workItem from="1608197837255" duration="546000" />
+      <workItem from="1608773807329" duration="9733000" />
     </task>
     <servers />
   </component>
@@ -236,9 +243,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="119" y="74" width="1137" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607585377149" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600922798501">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608787658216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600922798501" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608787658216" />
   </component>
 </project>

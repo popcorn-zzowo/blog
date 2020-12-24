@@ -29,7 +29,9 @@ class CreateMotocycleRequest extends FormRequest
             'kind'=>'required|string|min:2|max:5',
             'hp'=>'required|numeric|min:15|max:300',
             'nm'=>'required|numeric|min:15|max:200',
-            'kg'=>'required|numeric|min:60|max:550'
+            'kg'=>'required|numeric|min:60|max:550',//|lt:height
+            'out'=>'nullable',
+            'maketime'=>'nullable|dateearlier:out'
         ];
     }
     public function messages()
@@ -52,7 +54,9 @@ class CreateMotocycleRequest extends FormRequest
             "nm.max"=>"扭力 範圍須介於15~200之間",
             "kg.required"=>"重量 為必填",
             "kg.min"=>"重量 範圍須介於60~550之間",
-            "kg.max"=>"重量 範圍須介於60~550之間"
+            "kg.max"=>"重量 範圍須介於60~550之間",
+            //"kg.lt"=>"重量必須大於扭力和馬力"
+            "maketime.dateearlier"=>"製造日期 必須大於 出廠日期"
         ];
     }
 }

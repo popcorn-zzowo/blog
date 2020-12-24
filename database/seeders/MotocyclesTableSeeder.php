@@ -47,6 +47,8 @@ class MotocyclesTableSeeder extends Seeder
             $kind = $this ->generateRandomZone();
 
             $random_datatime = Carbon::now()->subMinute(rand(1, 55));
+            $out=Carbon::now()->subYears(rand(0,10))->subMonth(rand(0,12));
+            $maketime=Carbon::now()->subYears(rand(12,15))->subMonth(rand(0,12));
             DB::table('motocycles')->insert([
                 'brand_id' =>rand(1,12),
                 'name' => $name,
@@ -54,6 +56,8 @@ class MotocyclesTableSeeder extends Seeder
                 'hp' => rand(30,250),
                 'nm' => rand(10,170),
                 'kg' => rand(100,600),
+                'out'=>$out,
+                'maketime'=>$maketime,
                 'created_at' => $random_datatime,
                 'updated_at' => $random_datatime
             ]);

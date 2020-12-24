@@ -23,5 +23,13 @@
     {!! Form::text('kg',null,['class'=>'form-control']) !!}
 </div>
 <div class="form-group">
+    {!! Form::label('out','出廠日期') !!}
+    {!! Form::date('out',null,['class'=>'form-control']) !!}
+</div>
+<div class="form-group">
+    {!! Form::label('maketime','製造日期') !!}
+    {!! Form::date('maketime',null,['class'=>'form-control']) !!}
+</div>
+<div class="form-group">
     {!! Form::submit($submitbuttontext,['class'=>'form-control']) !!}
 </div>

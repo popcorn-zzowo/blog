@@ -21,6 +21,8 @@ class CreateMotocyclesTabel extends Migration
             $table->integer('hp')->unsigned()->comment('馬力');
             $table->float('nm')->unsigned()->comment('扭力');
             $table->integer('kg')->unsigned()->comment('重量');
+            $table->date('out')->default('2012-01-01')->nullable()->comment('出廠日期');
+            $table->date('maketime')->default('2009-05-05')->nullable()->comment('製造日期');
             $table->timestamps();
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
         });
