@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use Carbon\Carbon;
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class BrandsController extends Controller
 {
@@ -82,5 +82,54 @@ class BrandsController extends Controller
         $brand = Brand::findOrFail($id);
         $brand->delete();
         return redirect('brands');
+    }
+
+    public function api_brands()
+    {
+        return Brand::all();
+    }
+    public function api_update(Request $request)
+    {
+        $brand = Brand::find($request->input('id'));
+        if ($brand == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+        $brand->brand = $request->input('brand');
+        $brand->country = $request->input('country');
+        $brand->gp = $request->input('gp');
+        $brand->wsbk = $request->input('wsbk');
+
+
+        if ($brand->save())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        } else {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+    }
+    public function api_delete(Request $request)
+    {
+        $brand = Brand::find($request->input('id'));
+
+        if ($brand == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+
+        if ($brand->delete())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        }
     }
 }

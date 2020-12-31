@@ -25,4 +25,5 @@ class Brand extends Model
     {
         return $this->hasMany('App\Models\motocycle', 'brand_id');
     }
+    
 }

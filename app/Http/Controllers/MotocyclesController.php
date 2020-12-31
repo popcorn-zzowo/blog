@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\Motocycle;
+use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -37,6 +39,35 @@ class MotocyclesController extends Controller
             $data["$kind->kind"]=$kind->kind;
         }
         return view('motocycles.index',['motocycles'=>$motocycles,'kinds'=>$data]);
+    }
+    public function api_brands()
+    {
+        return Brand::all();
+    }
+    public function api_updata(Request $request)
+    {
+        $brand = Brand::find($request->input('id'));
+        if($brand == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+        $brand->name = $request->input('name');
+        $brand->country = $request->input('country');
+        $brand->wsbk = $request->input('wabk');
+        $brand->gp = $request->input('gp');
+        if($brand->save())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        }else {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+
     }
 
     public function create()
@@ -139,5 +170,59 @@ class MotocyclesController extends Controller
             $data["$kind->kind"]=$kind->kind;
         }
         return view('motocycles.index',['motocycles'=>$motocycles,'kinds'=>$data]);
+    }
+
+    public function api_motocycles()
+    {
+        return Motocycle::all();
+    }
+
+    public function api_update(Request $request)
+    {
+        $motocycle = Motocycle::find($request->input('id'));
+        if ($motocycle == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+        $motocycle->name = $request->input('name');
+        $motocycle->brand_id = $request->input('brand_id');
+        $motocycle->kind = $request->input('kind');
+        $motocycle->hp = $request->input('hp');
+        $motocycle->nm = $request->input('nm');
+        $motocycle->kg = $request->input('kg');
+        $motocycle->out = $request->input('out');
+        $motocycle->maketime = $request->input('maketime');
+
+
+        if ($motocycle->save())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        } else {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+    }
+    public function api_delete(Request $request)
+    {
+        $motocycle = Motocycle::find($request->input('id'));
+
+        if ($motocycle == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+
+        if ($motocycle->delete())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        }
     }
 }

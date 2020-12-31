@@ -24,8 +24,8 @@
             <td>{{$motocycle->id}}</td>
 {{--            <td>{{$motocycle->brand_id}}</td>--}}
             <td>{{$motocycle->name}}</td>
-            <td>{{$motocycle->brand->brand}}</td>
-            <td>{{$motocycle->brand->country}}</td>
+            <td>{{$motocycle->brand['brand']}}</td>
+            <td>{{$motocycle->brand['country']}}</td>
             <td>{{$motocycle->kind}}</td>
             <td>{{$motocycle->hp}}</td>
             <td>{{$motocycle->nm}}</td>

@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ac9da9-97a2-43a8-8921-16f34d43c88e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotocyclesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Motocycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Motocycle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/motocycles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +144,7 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hwQwIH6Qu5o5P84jMoF2Jahx6W" />
@@ -198,7 +207,8 @@
       <workItem from="1607564393928" duration="14206000" />
       <workItem from="1608183259201" duration="6534000" />
       <workItem from="1608197837255" duration="546000" />
-      <workItem from="1608773807329" duration="12802000" />
+      <workItem from="1608773807329" duration="13398000" />
+      <workItem from="1609379810533" duration="13024000" />
     </task>
     <servers />
   </component>
@@ -214,18 +224,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="757" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608186564688" />
-    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607564593204">
+    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609400794055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607564593204" />
+    <state x="778" y="408" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609400794055" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600947284325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600947284325" />
-    <state x="733" y="240" key="NewPhpClassDialog" timestamp="1603956553859">
+    <state x="733" y="240" key="NewPhpClassDialog" timestamp="1609387645722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603956553859" />
+    <state x="733" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609387645722" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1604567520392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,6 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="119" y="74" width="1137" height="891" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607585377149" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1609400277948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609400277948" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608787658216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
