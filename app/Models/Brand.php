@@ -25,5 +25,10 @@ class Brand extends Model
     {
         return $this->hasMany('App\Models\motocycle', 'brand_id');
     }
-    
+
+    public function delete()
+    {
+        $this->motocycles()->delete();
+        return parent::delete();
+    }
 }
